@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes Agendados - Peluquería</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Clientes Agendados</h1>
+        <table id="appointmentTable">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Teléfono</th>
+                    <th>Fecha</th>
+                    <th>Hora</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Las citas se agregarán aquí -->
+            </tbody>
+        </table>
+        <button class="btn-secondary" onclick="location.href='citas.html'">Volver</button>
+        <button id="sendWhatsAppBtn" class="btn-primary">Enviar a WhatsApp</button>
+    </div>
+    
+    <script src="clientes.js"></script>
+</body>
+</html>

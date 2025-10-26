@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar Citas - Peluquería</title>
+    <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Agendar Cita</h1>
+        <form id="appointmentForm">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Teléfono:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="date">Fecha:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Hora:</label>
+            <input type="time" id="time" name="time" required>
+
+            <button type="submit" class="btn-primary">Agendar Cita</button>
+        </form>
+        <button id="viewAppointmentsBtn" class="btn-secondary" onclick="location.href='clientes.html'">Ver Clientes Agendados</button>
+        <div id="confirmation" class="hidden">
+            <p>¡Tu cita ha sido agendada!</p>
+        </div>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
